@@ -30,7 +30,7 @@ on init
     write /sys/class/android_usb/android0/iSerial ${ro.serialno}
 
 on charger
-    setprop persist.sys.usb.config mass_storage
+    setprop persist.sys.usb.config charging
 
 on fs
     mkdir /dev/usb-ffs 0770 shell shell
@@ -39,6 +39,10 @@ on fs
     write /sys/class/android_usb/android0/f_ffs/aliases adb
     setprop sys.usb.ffs.aio_compat 1
     setprop sys.usb.mtp.device_type 2
+
+    # Disable nonblocking_ffs to avoid adbd crashes
+    setprop persist.adb.nonblocking_ffs 0
+    setprop ro.adb.nonblocking_ffs 0
 
     # Set basic USB configs for for msm8994/8992
     write /sys/class/android_usb/f_mass_storage/lun/nofua 1

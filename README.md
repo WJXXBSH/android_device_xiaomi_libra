@@ -1,4 +1,4 @@
-Copyright 2020 - The OmniRom Project
+Copyright 2021 - The OmniRom Project
 
 Device configuration for Xiaomi Mi-4c/Mi-4s
 ===
@@ -6,7 +6,7 @@ Device configuration for Xiaomi Mi-4c/Mi-4s
 Basic | Spec Sheet
 ---:|:---
 CHIPSET | Qualcomm MSM8992 Snapdragon 808
-CPU | Dual-core 1.8 GHz ARM Cortex-A57 + Quad-core 1.6 GHz ARM Cortex-A53
+CPU | Dual-core 1.9 GHz ARM Cortex-A57 + Quad-core 1.6 GHz ARM Cortex-A53
 GPU | Adreno 418
 Memory | 2 GB/3 GB
 Storage | 16 GB/32 GB
